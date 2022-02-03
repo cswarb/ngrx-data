@@ -1,0 +1,10 @@
+<h1>App</h1>
+
+<p>LOADING: {{loading$ | async | json}}</p>
+<p>DATA: {{data$ | async | json}}</p>
+<!-- <p>SELECTORS$: {{selectors$ | json}}</p> -->
+<p>SOMETHING: {{something$ | async | json}}</p>
+
+<div *ngFor="let data of (data$ | async)">
+  {{data | json}}
+</div>

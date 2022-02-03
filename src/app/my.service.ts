@@ -4,13 +4,13 @@ import {
     EntityCollectionServiceElementsFactory
 } from '@ngrx/data';
 
-export interface Hero {
+export interface Permission {
     id: string;
 }
 
 @Injectable({ providedIn: 'root' })
-export class HeroService extends EntityCollectionServiceBase<Hero> {
+export class Service extends EntityCollectionServiceBase<Permission> {
     constructor(serviceElementsFactory: EntityCollectionServiceElementsFactory) {
-        super('Hero', serviceElementsFactory);
+        super('Permission', serviceElementsFactory);
     }
 }

@@ -1,13 +1,16 @@
 import { EntityMetadataMap } from '@ngrx/data';
 
 const entityMetadata: EntityMetadataMap = {
-    Hero: {},
-    Villain: {}
+    Permission: {
+        additionalCollectionState: {
+            something: 'NEW'
+        }
+    },
 };
 
-const pluralNames = { Hero: 'Heroes' };
+// const pluralNames = { Permission: 'Permissions' };
 
 export const entityConfig = {
     entityMetadata,
-    pluralNames
+    // pluralNames
 };
