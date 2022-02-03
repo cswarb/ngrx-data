@@ -3,7 +3,9 @@
 <p>LOADING: {{loading$ | async | json}}</p>
 <p>DATA: {{data$ | async | json}}</p>
 <!-- <p>SELECTORS$: {{selectors$ | json}}</p> -->
-<p>SOMETHING: {{something$ | async | json}}</p>
+<p>PAGE: {{page$ | async | json}}</p>
+<p>NUMRESULTS: {{numResults$ | async | json}}</p>
+<p>DATELOADED: {{dateLoaded$ | async | json}}</p>
 
 <div *ngFor="let data of (data$ | async)">
   {{data | json}}

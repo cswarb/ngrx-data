@@ -3,7 +3,9 @@ import { EntityMetadataMap } from '@ngrx/data';
 const entityMetadata: EntityMetadataMap = {
     Permission: {
         additionalCollectionState: {
-            something: 'NEW'
+            page: null,
+            numResults: null,
+            dateLoaded: null
         }
     },
 };

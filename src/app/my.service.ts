@@ -6,6 +6,7 @@ import {
 
 export interface Permission {
     id: string;
+    dateLoaded: any;
 }
 
 @Injectable({ providedIn: 'root' })
